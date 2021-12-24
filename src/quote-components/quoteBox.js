@@ -30,7 +30,7 @@ const QuoteBox = () => {
                 </div>
                 <div id='footer'>
                     <a 
-                        href={`https://twitter.com/intent/tweet?hashtags=aspireToperspire&related=dami_laare&text=${encodeURIComponent('"' + quotes[index]['text'] + '" ' + quotes[index]['author'])}`} target='_blank'
+                        href={`https://twitter.com/intent/tweet?hashtags=aspireToperspire&related=dami_laare&text=${encodeURIComponent('"' + quotes[index]['text'] + '" \n' + quotes[index]['author'] + ' \n@dami_laare')}`} target='_blank'
                         rel='noreferrer'
                         >
                             <i className="fab fa-twitter"></i>
