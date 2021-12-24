@@ -1,0 +1,86 @@
+div#quote-box {
+    position:relative;
+    background-color: #fff;
+    width: 65%;
+    height: fit-content;
+}
+
+div#quote-box__unloaded {
+    position:relative;
+    background-color: #fff;
+    width: 55%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text {
+    
+    font-size: 1.5rem;
+}
+
+#author {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tc{
+    text-align: center
+}
+
+.tr{
+    text-align: right;
+}
+
+#main-quote {
+    margin: 3rem 0;
+    /* padding: 0 2rem; */
+
+}
+
+button {
+    margin: 1rem;
+    background-color: rgba(0,0,0,1) !important;
+    border-color: transparent !important;
+}
+
+button:hover {
+    background-color: rgba(0,0,0,0.8) !important;
+}
+
+button:focus {
+    border-color: rgba(0,0,0,0.8) !important;
+    box-shadow: none !important;
+
+}
+
+div#footer {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+a {
+    margin: 1rem;
+    color: rgba(0,0,0,1);
+    font-size: 1.5rem;
+}
+a:hover {
+    color: rgba(0,0,0,0.8)
+}
+
+@keyframes loading {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
+i#loading {
+    opacity: 60%;
+    font-size: 8rem;
+    animation-name: loading;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
