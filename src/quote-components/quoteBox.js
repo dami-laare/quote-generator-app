@@ -29,7 +29,13 @@ const QuoteBox = () => {
                     <p id='author' className='tr'>{quotes[index]['author']}</p>
                 </div>
                 <div id='footer'>
-                    <a href='twitter.com/intent/tweet' target='_blank'><i className="fab fa-twitter"></i></a>
+                    <a 
+                        href={`https://twitter.com/intent/tweet?hashtags=aspireToperspire&related=dami_laare&text=${encodeURIComponent('"' + quotes[index]['text'] + '" ' + quotes[index]['author'])}`} target='_blank'
+                        rel='noreferrer'
+                        >
+                            <i className="fab fa-twitter"></i>
+                    
+                    </a>
                     <button id='new-quote' className="btn btn-primary" onClick={newQuoteHandler}>New Quote</button>
                 </div>
             </div>
