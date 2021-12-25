@@ -1,6 +1,8 @@
 import React from 'react'
 import './quoteBox.css'
 
+
+
 const QuoteBox = () => {
     const [quotes, setQuotes] = React.useState(null)
     const [isLoaded, setIsLoaded] = React.useState(false)
